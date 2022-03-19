@@ -8,10 +8,7 @@ A simple C program to draw Theodorus Spiral written using Raylib for rendering
 - ESC to exit program
 
 ## Installation
-Install SFML framework
-<pre>
-sudo apt install libsfml-dev
-</pre>
+Install Raylib (see https://github.com/raysan5/raylib)
 Clone the repository
 <pre>
 git clone https://github.com/LxAlessandroLx/theodorus-spiral.git
