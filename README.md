@@ -1,5 +1,5 @@
-# Theodorus Spiral
-A simple C program to draw Theodorus Spiral written using Raylib for rendering
+# Spiral of Theodorus
+A simple C program to draw Spiral of Theodorus (also known as root spiral) written using Raylib for rendering
 
 ## Commands
 - right arrow to increase the number of triangles
