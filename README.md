@@ -9,6 +9,7 @@ A simple C program to draw Theodorus Spiral written using Raylib for rendering
 
 ## Installation
 Install Raylib (see https://github.com/raysan5/raylib)
+
 Clone the repository
 <pre>
 git clone https://github.com/LxAlessandroLx/theodorus-spiral.git
