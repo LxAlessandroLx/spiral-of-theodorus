@@ -1,18 +1,23 @@
 .PHONY: build
 
-SHELL := /bin/bash
 CC := gcc
-CFLAGS := -Wall -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+CFLAGS := -Wall
+RAYLIBFLAGS := -lraylib -lm
 BUILDDIR := build
 TARGET := TheodorusSpiral
-SRC := src/main.c src/theodorusSpiral.c
+OBJ := src/main.o src/theodorusSpiral.o
 INCLUDE := -I src
 
-build:
-	$(CC) -o $(BUILDDIR)/$(TARGET) $(INCLUDE) $(SRC) $(CFLAGS)
+all: $(TARGET)
 
-time:
-	time $(CC) -o $(BUILDDIR)/$(TARGET) $(INCLUDE) $(SRC) $(CFLAGS)
+$(TARGET): $(OBJ)
+	$(CC) -o $(BUILDDIR)/$(TARGET) $^ $(RAYLIBFLAGS)
+
+%.o: %.cpp
+	$(CC) -c $(INCLUDE) -o $@ $^ $(CFLAGS)
+
+clean:
+	rm $(OBJ)
 
 run:
 	./build/$(TARGET)
