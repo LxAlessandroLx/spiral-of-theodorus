@@ -20,6 +20,7 @@ void init()
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     SetConfigFlags(FLAG_MSAA_4X_HINT * (antialiasing-1));
     InitWindow(screenWidth,screenHeight,"Theodorus Spiral");
+    SetTargetFPS(1000);
 
     setAngles();
     reset();
@@ -79,6 +80,8 @@ void draw()
             DrawTriangle((Vector2){0,0}, (Vector2){(sqrt(index+1)*zoom),0},(Vector2){(sqrt(index+1)*zoom),-zoom},(Color){0,158,47,50});
             DrawTriangleLines((Vector2){0,0}, (Vector2){(sqrt(index+1)*zoom),0},(Vector2){(sqrt(index+1)*zoom),-zoom},(Color){0,158,47,255});
         rlPopMatrix();
+
+        index++;
     }
 }
 
@@ -95,9 +98,6 @@ void run()
         draw();
 
         EndDrawing();
-
-        if (index < triangles)
-            index++;
     }
 
     CloseWindow();
