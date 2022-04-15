@@ -34,12 +34,12 @@ make run
 ## Usage
 <pre>
 Usage: 
- TheodorusSpiral [triangless] [antialiasing] [zoom]
+ TheodorusSpiral [options]
 
-Arguments:
- - triangles           number of triangles of the spiral (default = 50)
- - antialiasing        activate antialiasing: 1 to disable, 2 to enable (default = 1)
- - zoom                zoom scale (default = 60)
+Options:
+ -t, --triangles           number of triangles of the spiral (default = 50)
+ -a, --antialiasing        activate antialiasing: 1 to disable, 2 to enable (default = 1)
+ -z, --zoom                zoom scale (default = 60)
 </pre>
 
 ## Screenshots
