@@ -8,11 +8,11 @@ extern int triangles;
 extern int antialiasing;
 extern int zoom;
 
-extern void init();
-extern void setAngles();
-extern void reset();
-extern void update();
-extern void draw();
-extern void run();
+void init();
+void setAngles();
+void reset();
+void update();
+void draw();
+void run();
 
 #endif
