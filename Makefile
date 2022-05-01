@@ -11,6 +11,7 @@ INCLUDE := -I src
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
+	mkdir -p build
 	$(CC) -o $(BUILDDIR)/$(TARGET) $^ $(RAYLIBFLAGS)
 
 %.o: %.cpp
