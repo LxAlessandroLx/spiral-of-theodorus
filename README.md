@@ -18,10 +18,6 @@ Move into the directory
 <pre>
 cd theodorus-spiral
 </pre>
-Create the build folder
-<pre>
-mkdir build
-</pre>
 Build the project
 <pre>
 make
